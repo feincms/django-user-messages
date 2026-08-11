@@ -8,7 +8,7 @@ from django.utils.functional import SimpleLazyObject
 
 
 def add_message(user, level, message, extra_tags="", *, deliver_once=True, meta=None):
-    from user_messages.models import Message
+    from user_messages.models import Message  # noqa: PLC0415
 
     Message.objects.create(
         level=level or 20,  # INFO
@@ -34,7 +34,7 @@ def get_messages(*, request=None, user=None):
                 user = request.user
 
         if user is not None:
-            from user_messages.models import Message
+            from user_messages.models import Message  # noqa: PLC0415
 
             user_messages = Message.objects.filter(
                 user=user, delivered_at__isnull=True
