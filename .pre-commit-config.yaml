@@ -23,12 +23,12 @@ repos:
     hooks:
       - id: absolufy-imports
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: "v0.17.3"
+    rev: "v0.17.4"
     hooks:
       - id: ruff-check
       - id: ruff-format
   - repo: https://github.com/tox-dev/pyproject-fmt
-    rev: v2.30.3
+    rev: v2.30.6
     hooks:
       - id: pyproject-fmt
   - repo: https://github.com/abravalheri/validate-pyproject
