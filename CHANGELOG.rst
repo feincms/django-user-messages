@@ -5,6 +5,7 @@ Change log
 Next version
 ============
 
+- Dropped support for Python versions older than 3.10.
 - Added Django 5.2, Python 3.13.
 
 
